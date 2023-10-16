@@ -1,0 +1,435 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    color:#ededed;
+    
+    
+}
+.myimage{
+    padding: 20%;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar{
+    height: 20px;
+}
+.navbar a {
+    display:inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:35px;
+    transition:.3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    
+}
+.navbar a:hover{
+    color: #0ef;
+}
+
+.about
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+   
+
+}
+
+.projects {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    display: block;
+    align-items: center;
+    padding: 70px 10% 0;
+   
+
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.home-sci{
+    margin-bottom: 10%;
+}
+.home-content{
+    max-width: 600px;
+    display: inline;
+    gap: 10px;
+}
+
+.new {
+    width: 150%;
+}
+.project-text{
+    max-width: 600px;
+    display: inline;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    position: relative;
+
+  
+}
+
+.about-text{
+    max-width: 600px;
+    display: inline;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.aboutimage {
+    display: inline;
+    resize: both;
+    height: auto;
+   
+
+}
+.aboutimage img {
+    border: solid;
+    border-color: #0ef;
+    border-radius: 50%;
+}
+.project-image {
+    display: inline;
+    resize: both;
+    height: auto;
+   
+}
+.project-image img {
+    border: solid;
+    border-color: #0ef;
+    border-radius: 50%;
+    width: 50%;
+}
+.bgimage {
+    display: inline;
+    resize: both;
+    height: auto;
+    margin-left: 10%;
+    
+}
+.bgimage img {
+    border: solid;
+    border-color: #0ef;
+    border-radius: 50%;
+}
+.home-content h3 {
+ font-size: 32px;
+ font-weight: 700;
+}
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content h3 {
+
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+    
+}
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+
+}
+.home-content h3 span {
+    color: #0ef;
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.skill{
+    background-color: black;
+    height: 80vh;
+    align-items: center;
+   
+}
+.about-text h4 span {
+    color: #0ef;
+}
+.myskill {
+    color: #0ef;
+}
+
+.skill-text{
+
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 5%;
+
+}
+.skill-text h1 {
+    display: inline-block;
+    color: ;
+}
+.Card {
+    display: flex;
+    padding: 5%;
+    border: solid;
+    margin: 5%;
+    border-color: #0ef;
+    border-radius: 5%;
+    
+}
+.container h4{
+color: #0ef;
+}
+
+
+.contact {
+    background-color: black;
+    height: 100vh;
+    align-items: center;
+   
+}
+.contact-text{
+
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 5%;
+
+}
+.contact-text h2 {
+    color: #0ef;
+}
+
+.contact-info {
+    margin-top: 20%;
+}
+
+
+@media (max-width: 767px){
+
+.newscreen{
+    width: 100%;
+
+}
+.newscreen #small{
+    font-size: 3vw;
+    
+}
+#small{
+    font-size: 3.5vw;
+    
+}
+
+.home-content h3{
+    font-size: 3vw;
+}
+.home-content h1{
+    font-size: 4vw;
+}
+.home-content p{
+    font-size: 3vw;
+}
+.bgimage  img{
+    width: 100%;
+
+}
+.btn-box {
+    font-size: 2vw;
+}
+
+.aboutimage img{
+    width: 100%;
+}
+
+.about-text h2 {
+    font-size: 3vw;
+}
+.about-text h4 {
+    font-size: 3vw;
+}
+.about-text p {
+    font-size: 2vw;
+}
+.skill-text h1 {
+    font-size: 4vw;
+}
+
+.container h4 {
+    font-size: 3vw;
+}
+.container p{
+    font-size: 2vw;
+}
+
+.project-image img {
+    width: 80%;
+}
+
+.project-text h2 {
+    font-size: 3.5vw;
+}
+.project-text li {
+    font-size: 2.5vw;
+}
+
+}
+
+.btn{
+    border: solid;
+    border-color: #0ef;
+    color: black;
+    border-radius: 100%;
+    text-decoration: none;
+    width: 20vh;
+    height: 10vh;
+    font-size: 20px;
+    background-color: #0ef;
+    text-align: center;
+}
+.btn:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+    color: #0ef;
+    background-color: black;
+}
+
+.mywrite {
+    position: relative;
+
+}
